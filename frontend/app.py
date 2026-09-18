@@ -48,7 +48,7 @@ if file:
         }
 
         response = requests.post(
-            "http://127.0.0.1:8000/upload",
+            "https://easemylearn-backend.onrender.com/upload",
             files=files
         )
 
@@ -85,7 +85,7 @@ if "document_id" in st.session_state:
         })
 
         response = requests.post(
-            "http://127.0.0.1:8000/ask",
+            "https://easemylearn-backend.onrender.com/ask",
             json={
                 "question": question,
                 "document_id": st.session_state.document_id
